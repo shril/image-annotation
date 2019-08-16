@@ -252,7 +252,7 @@ def flask_labeller(labelled_images, label_classes, config=None, use_reloader=Tru
 
 
     if socketio is not None:
-        socketio.run(app, host="0.0.0.0", port=5000, debug=debug, use_reloader=use_reloader)
+        socketio.run(app, host="0.0.0.0", debug=debug, use_reloader=use_reloader)
     else:
-        app.run(host="0.0.0.0", port=5000, debug=debug, use_reloader=use_reloader)
+        app.run(host="0.0.0.0", debug=debug, use_reloader=use_reloader)
 
