@@ -61,10 +61,7 @@ def flask_labeller(labelled_images, label_classes, config=None, use_reloader=Tru
 
 
     users = {
-        'vaishak@atkinsglobal.com': {'password': 'secret'},
-        'abhishek@atkinsglobal.com': {'password': 'secret'},
-        'janpreet@atkinsglobal.com': {'password': 'secret'},
-        'shril@atkinsglobal.com': {'password': 'secret'}
+        'atkins_annotator': { 'password': '4ukm#96' }
     }
 
 
