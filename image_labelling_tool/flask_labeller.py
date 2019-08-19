@@ -85,7 +85,7 @@ def flask_labeller(labelled_images, label_classes, config=None, use_reloader=Tru
     @login_manager.request_loader
     def request_loader(request):
         email = request.form.get('email')
-        if email not in users:
+        if email not in users or request.form['password'] != users[email]['password']:
             return
 
         user = User()
